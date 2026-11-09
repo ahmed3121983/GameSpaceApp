@@ -15,13 +15,14 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Grant execute permission for gradlew
+      - name: Install Gradle
+        run: sudo apt-get update && sudo apt-get install -y gradle
+
+      - name: Generate Gradle Wrapper and Build
         run: |
           gradle wrapper
           chmod +x gradlew
-
-      - name: Build APK with Gradle
-        run: ./gradlew assembleDebug
+          ./gradlew assembleDebug
 
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
