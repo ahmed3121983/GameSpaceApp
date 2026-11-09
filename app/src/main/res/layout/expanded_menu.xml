@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="220dp"
+    android:layout_height="wrap_content"
+    android:background="#DD1E1E1E"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:elevation="8dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Game Space Menu"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btn_powersave"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="توفير الطاقة"
+        android:textSize="12sp"
+        android:backgroundTint="#2E7D32"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btn_balanced"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="الوضع المتوازن"
+        android:textSize="12sp"
+        android:backgroundTint="#F57C00"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btn_performance"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="الأداء العالي"
+        android:textSize="12sp"
+        android:backgroundTint="#D32F2F"
+        android:textColor="#FFFFFF"/>
+
+</LinearLayout>
